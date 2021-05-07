@@ -1,0 +1,4 @@
+FROM openjdk:11 
+ADD target/department.jar department.jar
+EXPOSE 9100
+ENTRYPOINT ["java","-jar","department.jar"]
